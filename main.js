@@ -1,7 +1,5 @@
 import './style.scss'
 import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
-
 document.querySelector('#app').innerHTML = `
   <div class="w-screen h-screen flex flex-col justify-center items-center">
   <h1 class="font-bold">VITE + TailwindCSS + Sass boilerplate by <a href="https://n3-rd.github.io" class="text-blue-600">N3RD</a></h1>
