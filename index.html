@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&f[]=boska@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/luge.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app" class="">
+
+    <div class="header w-screen h-14 fixed z-[999]">
+      <ul class="flex flex-row justify-around font-semibold text-xl uppercase">
+        <li class="header__item">Home</li>
+        <li class="header__item">About</li>
+        <li class="header__item">Studio</li>
+      </ul>
+    </div>
+
+    <div class="w-screen h-screen flex justify-center items-center">
+
+      <div class="center-image w-[24rem] h-[29rem] bg-red-500">
+        <div class="center-image__inner h-full w-full">
+          <img src="kat-love-zncUDOR-Ie8-unsplash.jpg" alt="portrait" class="object-cover w-full h-full"
+            id="main-image">
+        </div>
+      </div>
+
+      <!-- absolute center text -->
+      <div class="absolute text-center text-white">
+        <h1
+          class="text-[8rem] font-black uppercase main-text mix-blend-difference brightness-[0.5] pointer-events-none">
+          Revamped</h1>
+      </div>
+      <div class="absolute bottom-3 right-7 text-[2rem] font-semibold">01</div>
+    </div>
+
+    <div class="section">
+
+      <div
+        class="w-screen h-[32rem] relative bg-[url(rodolfo-sanches-carvalho-Etb6y52feSY-unsplash.jpg)] bg-center bg-cover">
+        <div class="absolute bottom-3 right-10 text-[5rem] font-semibold">02</div>
+      </div>
+
+      <div class="w-screen flex py-10 opacity-70">
+        <div class="w-[35%] pl-5">
+          <div class="text-5xl font-medium">We are revamped</div>
+          <div class="py-3 text-2xl">Revamped Photography is the studio you've been looking for! Whether you need
+            professional headshots, stunning portraits, or eye-catching product shots, we've got you covered. </div>
+        </div>
+        <div class="w-[65%] pl-24">
+          <div class="text-2xl font-medium">Our photographers are skilled in a variety of genres, so no matter what kind
+            of photos you need, we've got you covered. Need professional headshots for your acting or modeling
+            portfolio? We've got you. </div>
+          <div class="py-3 text-2xl pr-3">At Revamped Photography, we're not happy until you're happy. That's why we'll
+            work
+            with you to make sure you get the exact images you're looking for. Don't love a shot? No worries - we'll
+            keep shooting until we get it right. </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="dark-section h-[200vh]">
+
+      <section class="large-image-section py-20">
+
+        <div class="grid grid-cols-3 gap-4 px-5">
+          <div
+            class="grid-image__container w-full h-[28rem] sepia hover:sepia-0 overflow-hidden transition-all duration-500 ease">
+            <div
+              class="grid-image__inner w-full h-full rounded-t-full bg-[url(/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg)] bg-cover bg-center hover:scale-110 transition-all duration-300 ease">
+            </div>
+          </div>
+          <div
+            class="grid-image__container w-full h-[28rem] sepia hover:sepia-0 overflow-hidden transition-all duration-500 ease">
+            <div
+              class="grid-image__inner w-full h-full rounded-t-full bg-[url(/richard-jaimes-s97-KYat9sA-unsplash.jpg)] bg-cover bg-center hover:scale-110 transition-all duration-300 ease">
+            </div>
+          </div>
+          <div
+            class="grid-image__container w-full h-[28rem] sepia hover:sepia-0 overflow-hidden transition-all duration-500 ease">
+            <div
+              class="grid-image__inner w-full h-full rounded-t-full bg-[url(/joren-aranas-nmuyqgSOpEE-unsplash.jpg)] bg-cover bg-center hover:scale-110 transition-all duration-300 ease">
+            </div>
+          </div>
+        </div>
+
+        <div class="large-title-text serif font-bold text-center text-[17vw] h-screen">
+          REVAMPED
+        </div>
+
+      </section>
+
+      <section class="flex justify-center flex-grow items-center">
+        <div class="grid grid-cols-3 gap-4 px-5 text-center">
+
+          <div class="font-semibold text-lg flex">
+            <div>
+              Home
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="font-semibold text-lg flex">
+            <div>
+              About
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="font-semibold text-lg flex">
+            <div>
+              Contact
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="font-semibold text-lg flex">
+            <div>
+              Studio
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="font-semibold text-lg flex">
+            <div>
+              Story
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z" />
+              </svg>
+            </div>
+          </div>
+          <div class="font-semibold text-lg flex">
+            <div>
+              Lol
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <div class="h-[50vh]"></div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
